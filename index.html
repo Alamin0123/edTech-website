@@ -15,10 +15,12 @@
 }
 
 .carousel-caption {
-    bottom: 11.25rem;
-    padding:0 138px !important;
+    padding:70px !important;
   
 }
+.carousel-caption h1{
+font-size: 64px;}
+
 
 .carousel-item:after {
   content:"";
@@ -45,6 +47,17 @@ p.text-white {
 .font-color{
   color: #E9BE0F;
 }
+
+@media only screen and (min-width: 577px) and (max-width: 1000px) {
+  .carousel-caption{
+   padding: 0 !important;
+  }
+  .carousel-caption h1 {
+    font-size: 28px !important;
+  }
+}
+
+
 
     </style>
 </head>
@@ -100,7 +113,7 @@ p.text-white {
         <div class="carousel-inner">
           <div class="carousel-item active " data-bs-interval="10000">
             <img src="img/cover-1.png" class="d-block w-100 " alt="..." style="z-index:1" class="">
-            <div class="carousel-caption d-none d-md-block d-flex  align-items-center px-10 " style="z-index:2">
+            <div class="carousel-caption d-none d-md-block d-flex  align-items-center px-10 " style="z-index:5">
               <h1 class="text-white">Get Started Digital
                 Learning</h1>
               <p class="text-white" >It is a long established fact that a reader will be distracted by the readable
@@ -129,7 +142,7 @@ p.text-white {
               <p class="text-white" >It is a long established fact that a reader will be distracted by the readable
                 content of a page when looking at its layout.</p>
     
-                <button class="btn btn-primary px-4">Get Started</button>
+                <button class="btn btn-primary px-4 ">Get Started</button>
             </div>
           </div>
         </div>
@@ -153,106 +166,128 @@ p.text-white {
 <!--  Courses section start -->
 
           
-<section class="container">
-
-  <div class="course_title my-5 col-sm-p-">
-    <h1 class="text-center">Discover Our Popular
-      Courses</h1>
-      <p class="text-center">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
+<div class="container">
+<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 d-flex justify-content-center py-5">
+  <div class="col text-center">
+    <div class="px-0 px-md-5 px-lg-0">
+      <h1>Discover Our Popular
+        Courses</h1>
+      <p class="text-muted">
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      </p>
+    </div>
+  </div>
 </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-6 ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/course-1.png" class="w-100 rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Fundamental Of UI/UX Design</h5>
-              <p class="card-text">Some quick example text to build on the card title
-                and make up the bulk of the card.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-6 ">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/course-1.png" class="w-100 rounded-start" alt="...">
         </div>
-      </div>
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/course-2.png" class="w-100 rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Fullstack Web Development</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Price : 20$</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/course-3.png" class="w-100 rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Motion Graphics</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Price : 20$</small></p>
-            </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Fundamental Of UI/UX Design</h5>
+            <p class="card-text">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-6">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/course-4.png" class="w-100 rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Photography Basic Rules</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Price : 20$</small></p>
-            </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/course-2.png" class="w-100 rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Fullstack Web Development</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Price : 20$</small></p>
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/course-5.png" class="w-100 rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Javascript Basic to advanced</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Price : 20$</small></p>
-            </div>
-          </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/course-3.png" class="w-100 rounded-start" alt="...">
         </div>
-      </div>
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/course-6.png" class="w-100 rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Digital Marketing</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Price : 20$</small></p>
-            </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Motion Graphics</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Price : 20$</small></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+  <div class="col-sm-12 col-md-12 col-lg-6">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/course-4.png" class="w-100 rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Photography Basic Rules</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Price : 20$</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/course-5.png" class="w-100 rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Javascript Basic to advanced</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Price : 20$</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/course-6.png" class="w-100 rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Digital Marketing</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Price : 20$</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ 
+<div class="row row-cols-2 d-flex justify-content-center">
+  <div class="col">
+    <div class="d-flex justify-content-center py-4">
+      <button
+        class="btn px-3 py-2 d-none d-md-none d-lg-block edu-btn fw-semibold btn-primary"
+      >
+        See More Courses
+      </button>
+      <button
+        class="btn btn-primary d-block d-md-block d-lg-none px-3 py-2 fw-semibold edu-btn"
+      >
+        View All
+      </button>
+    </div>
+  </div>
+</div>
+</div>
 </section>
 
 <!--  Courses section end -->
@@ -263,10 +298,10 @@ p.text-white {
 
 <section class="container my-4">
   <div class="elearning-Institute row elearing">
-             <div class="col-sm-6">
+             <div class="col-sm-12 col-md-12 col-lg-6">
               <img src="img/working.png" alt="" srcset="" class="w-100">
              </div>
-             <div class="col-sm-6 d-flex align-items-center ">
+             <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center ">
                     <div class="elearing-content-section px-xl-5 ">
                       <h1>Explore The elearning
                         Institute</h1>
@@ -306,13 +341,13 @@ p.text-white {
 
   <section class="join-section container bg-primary my-5 rounded-1">
     <div class="row p-5  d-flex align-items-lg-center">
-      <div class="col-sm-6">
+      <div class="col-sm-12 col-12 col-md-12 col-lg-6">
         <h2 class="text-white">Ready to join?</h2>
         <p class="text-white">It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout.</p>
       </div>
-      <div class="col-sm-6 d-flex justify-content-end col-xm-12">
-        <button class="btn btn-light d-flex px-4">Register Now</button>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-6  d-flex justify-content-end col-xm-12">
+        <button class="btn btn-light d-flex px-4  ">Register Now</button>
       </div>
     </div>
      
@@ -325,12 +360,18 @@ p.text-white {
    team-meet-section-start
    -------------------------->
 <section class="team-meet container my-4">
-  <div class="meet-title  justify-content-md-end px-lg-5 ">
-    <h2>Meet Our Successfull
-      Students</h2>
-      <p>It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.</p>
+
+
+<div class="row">
+  <div class="col-12 col-lg-6 col-md-8 px-5">
+    <div class="meet-title  justify-content-md-end pe-4">
+      <h2>Meet Our Successfull
+        Students</h2>
+        <p>It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.</p>
+    </div>
   </div>
+</div>
      <div class="row my-5">
          <div class="col-sm-6 col-md-6 col-lg-3 ">
           <img src="img/student-1.png" alt="" srcset="" class="w-100">
@@ -370,8 +411,6 @@ p.text-white {
 
 <section class="container my-5">
   <div class="row">
-
-
     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 d-flex justify-content-center py-5"
     >
       <div class="col text-center">
@@ -553,7 +592,26 @@ p.text-white {
   company section end
  ----------------------------->
 
-
+<!-- ------------------------
+  footer-section-start 
+-------------------------->
+<section class="mt-5 container-fluid">
+  <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 d-flex justify-content-center py-5 bg-black p-sm-5">
+    <div class="col text-center">
+      <div class="px-0 px-md-5 px-lg-0">
+        <h1 class="m-0 p-0 text-white">Pro Edu</h1>
+        <p class="m-0 p-0 text-white">
+          Office 41, Zawaya Buildin, Ghala Muscat,<br>
+          Sultanate of Oman
+        </p>
+        <p class="m-0 p-0 text-white"> Privacy Ploicy | Terms of use</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ------------------------
+  footer-section-end 
+-------------------------->
 
 
 
